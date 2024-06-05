@@ -42,14 +42,14 @@ namespace Lab_7
 
         static public double method_gaus(double a, double b, int n)
         {
-            double[] t = { -0.577350, 0.57735 }; //Табличні дані з метод.
+            double[] t = { -0.577350, 0.57735 }; //Табличні дані поліноми Лагранджа з метод.
             double[] c = { 1, 1 };
 
             double result = 0;
 
             for (int i = 0; i < n; i++) 
             {
-                result += (c[i] * calc_fun2(t[i])); //Використана фор. №4
+                result += (c[i] * calc_fun2(t[i])); //Використана фор. 1.12
             }
             return result;
         }
